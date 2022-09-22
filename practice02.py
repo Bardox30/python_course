@@ -24,25 +24,25 @@ print('''
         d'             `b
 *******************************************************************************
 ''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+print("Bienvenidos a la cripta.")
+print("Tu mision es encontrar a Giomaru y hacer lo que quieras con el.")
 
 #Write your code below this line 👇
 
-choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n').lower()
-if choice1 == "left":
-  choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n').lower()
-  if choice2 == "wait":
-    choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n").lower()
-    if choice3 == "red":
-      print("It's a room full of fire. Game Over.")
-    elif choice3 == "yellow":
-      print("You found the treasure! You Win!")
-    elif choice3 == "blue":
-      print("You enter a room of beasts. Game Over.")
+choice1 = input('Estas a punto de cruzar la carretera. A donde decides ir? Escribe "izquierda" or "derecha" \n').lower()
+if choice1 == "izquierda":
+  choice2 = input('Te acercas a un lago. Hay una isla en el medio del lago. Escibe "esperar" para esperar por un bote. Escribe "nadar" para nadar hasta llegar. \n').lower()
+  if choice2 == "esperar":
+    choice3 = input("Llegas a la isla y encuentra un cuchillo en el suelo, lo coges por si acaso. Hay una casa con tres puertas de diferentes colores, rojo, amarillo y azul. Cual color eliges? \n").lower()
+    if choice3 == "rojo":
+      print("Encuentras al Giomaru de frente. El va a abrazarte y te acuchilla por la espalda. RIP.")
+    elif choice3 == "amarillo":
+      print("Encuentras al Giomaru de espaldas. Te acercas rapido y lo acuchillas a ese weon! Ganas el juego!")
+    elif choice3 == "azul":
+      print("Encuentras al Giomaru de costado. El te lanza uno de sus microfonos para noquearte. De ahi mueres porque te acuchilla. RIP.")
     else:
-      print("You chose a door that doesn't exist. Game Over.")
+      print("No entraste a ninguna puerte y por eso mueres de frio. RIP.")
   else:
-    print("You get attacked by an angry trout. Game Over.")
+    print("Eres atacado por un malvado caiman y mueres. RIP.")
 else:
-  print("You fell into a hole. Game Over.")
+  print("Te caes a un hoyo. RIP.")
